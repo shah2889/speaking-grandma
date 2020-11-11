@@ -20,19 +20,13 @@
 #         puts "I LOVE YOU TOO PUMPKIN!"
 #     end
     
-def speak_to_grandma(phrase = "HUH?! SPEAK UP, SONNY!".upcase)
-    puts phrase
-    return phrase
+def speak_to_grandma(phrase)
+  if phrase == "I LOVE YOU GRANDMA!"
+    return "I LOVE YOU TOO PUMPKIN!"
+  elsif phrase == phrase.upcase
+    return "NO, NOT SINCE 1938!"
+  else
+    return "HUH?! SPEAK UP, SONNY!"
   end
-  if speak_to_grandma == "I LOVE YOU GRANDMA!"
-    puts "I LOVE YOU TOO PUMPKIN!"
-  elsif speak_to_grandma == "Hi Nana, how are you?"
-    puts "HUH?! SPEAK UP, SONNY!"
-  elsif speak_to_grandma == "Hi!"
-    puts "HUH?! SPEAK UP, SONNY!"
-  elsif speak_to_grandma == "WHAT DID YOU EAT TODAY?"
-    puts "NO, NOT SINCE 1938!"
-  else 
-    puts "NO, NOT SINCE 1938!"
-  end
+end
   
